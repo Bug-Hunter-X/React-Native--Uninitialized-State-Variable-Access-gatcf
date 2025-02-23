@@ -1,0 +1,3 @@
+This repository demonstrates a common error in React Native applications: accessing a state variable before it has been initialized. This can lead to unexpected behavior and crashes, particularly if you attempt to perform arithmetic or other operations with the uninitialized state value.
+
+The `bug.js` file shows the problematic code, where `count` is accessed directly without checking if it has been set. This may result in `undefined + 1` being evaluated. The `bugSolution.js` file presents solutions to avoid this error by using conditional rendering or providing a default state value.
